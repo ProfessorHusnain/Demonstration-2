@@ -100,7 +100,8 @@ cursor: pointer;
  
 
 &:focus{
-     border-color: blue !important;
+     border-color: blue;
+     outline: none;
 }
 
 `
@@ -130,6 +131,7 @@ input {
 export const CheckBox = styled.input`
 accent-color: blue;
 cursor: pointer;
+outline-color: blue;
  
 `
 
@@ -138,6 +140,7 @@ export const CheckBoxText = styled.label`
 `
 export const ForgetPassword = styled(Link)`
  text-decoration: none;
+ outline-color: blue;
 `
 
 export const Button = styled.button`
@@ -149,6 +152,7 @@ export const Button = styled.button`
 color: white;
 cursor: pointer;
 font-weight: 600;
+outline-color: darkgray;
 `
 
 export const PageSwicher = styled.div`
@@ -162,4 +166,5 @@ margin: 0;
 `
 export const PageSwicherAction = styled(Link)`
 text-decoration: none;
+outline-color: darkblue;
 `

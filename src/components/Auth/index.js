@@ -79,7 +79,8 @@ const Auth = ({ OAuthData,
                                         id={f.name}
                                         placeholder={f.placeholder}
                                         value={formData[f.name]}
-                                        onChange={handelChange} />
+                                        onChange={handelChange}
+                                         />
                                     </>
                                 )
                             })}
