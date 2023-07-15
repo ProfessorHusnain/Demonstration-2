@@ -112,7 +112,15 @@ display: flex;
 justify-content: space-between;
 
 @media (max-width:680px) {
-     text-align: start;
+     flex-direction: column;
+     :nth-child(1){
+          text-align: start;
+          margin-top: 5px;
+     }
+     :nth-child(2){
+          margin: 5px 0;
+          text-align: end;
+     }
 }
 
 `
@@ -162,6 +170,16 @@ export const PageSwicher = styled.div`
 display: flex;
 justify-content: space-evenly;
 margin-top: 2%;
+
+@media (max-width:680px) {
+     flex-direction: column;
+     :nth-child(1){
+          margin-top: 5px;
+     }
+     :nth-child(2){
+          margin-top: 10px;
+     }
+}
  
 `
 export const PageSwicherQuestion = styled.p`

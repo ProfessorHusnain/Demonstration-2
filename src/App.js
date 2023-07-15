@@ -14,7 +14,7 @@ function App() {
    
   return (
     <div className='App'>
-    <Router>
+    <Router basename='Demonstration-2'>
     <Routes>
      <Route exact path='/' element={<Auth {...loginForm}/>}></Route>
      <Route  path='/signup' element={<Auth {...signupForm}/>}></Route>
