@@ -1,20 +1,26 @@
 import './App.css';
-import Auth from './components/Auth';
+ 
 import { 
   BrowserRouter as Router,
   Routes,
   Route 
 } from 'react-router-dom';
-import { loginForm,signupForm } from './Data';
+ 
+import Test from './components/Test';
+import Auth from './components/Auth';
+import { loginForm, signupForm } from './Data';
 
 function App() {
+   
   return (
-    <div className="App">
-      <Router>
-         
-       <Auth {...signupForm}/>
-      </Router>
-    </div>
+    <div className='App'>
+    <Router>
+    <Routes>
+     <Route exact path='/' element={<Auth {...loginForm}/>}></Route>
+     <Route  path='/signup' element={<Auth {...signupForm}/>}></Route>
+    </Routes>
+ </Router>
+ </div>
   );
 }
 

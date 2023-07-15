@@ -102,7 +102,7 @@ const Auth = ({ OAuthData,
                                 <CheckBoxText htmlFor='checkbox'>
                                     <CheckBox id='checkbox' type='checkbox' />
                                     {CheckBoxData.title}</CheckBoxText>
-                                <ForgetPassword>{CheckBoxData.passwordText}</ForgetPassword>
+                                <ForgetPassword to='/'>{CheckBoxData.passwordText}</ForgetPassword>
                             </RowWrapper>
                             <Button>{ButtonData}</Button>
                         </FormDataContainer>

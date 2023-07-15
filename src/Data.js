@@ -22,7 +22,7 @@ export const loginForm=
        PageChangerData:{
         question:"Don't have an account?",
         linkText:'Create Account',
-        link:'singup'
+        link:'/signup'
        }
     }
 
@@ -56,8 +56,8 @@ export const signupForm=
    },
    ButtonData:'Login',
    PageChangerData:{
-    question:"Don't have an account?",
-    linkText:'Create Account',
-    link:'singup'
+    question:"Already have a account?",
+    linkText:'Signin Account',
+    link:'/'
    }
 }

@@ -6,7 +6,7 @@ export const GlobalStyle=createGlobalStyle``
 export const PageContainer = styled.div`
 display: flex;
 gap: 5px;
- height: 594px;
+height: 594px;
 `
  
 
@@ -35,8 +35,10 @@ margin: auto;
 export const FormConatiner = styled.div`
 display: flex;
 width: 100%;
+ 
 flex-direction: column;
 margin-top: 5%;
+ 
 `
 
 export const OAuth = styled.div`
@@ -121,6 +123,7 @@ gap: 4%;
 input {
     flex: 1;
   }
+   
 
   @media (max-width:680px) {
      flex-direction: column;
