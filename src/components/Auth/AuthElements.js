@@ -1,16 +1,18 @@
-import styled , {createGlobalStyle,css} from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 import { Link } from "react-router-dom";
 
-export const GlobalStyle=createGlobalStyle``
+export const GlobalStyle = createGlobalStyle`
+
+`
 
 export const PageContainer = styled.div`
 display: flex;
 gap: 5px;
 height: 594px;
 `
- 
 
-     
+
+
 
 export const BannerConatiner = styled.div`
 display: flex;
@@ -124,7 +126,7 @@ justify-content: space-between;
 }
 
 `
-export const RowWrapperPro=styled.div`
+export const RowWrapperPro = styled.div`
 display: flex;
  flex-direction: row; 
 gap: 4%;
@@ -132,6 +134,14 @@ input {
     flex: 1;
   }
    
+  
+@media (max-width:1060px) {
+     flex-direction: column;
+     gap: 10px;
+}
+@media (max-width:750px) {
+     flex-direction: row;
+}
 
   @media (max-width:680px) {
      flex-direction: column;
